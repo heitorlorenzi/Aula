@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cardápio Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/estilo.css">
 </head>
 <body>
 
   <header>
-    <div>
-      <div>
+    <div class="container">
+      <div class="brand">
         <img src="./assets/img/logo_lanchonete.svg" alt="Logotipo da lanchonete">
         <div>
           <h1>Cardápio Digital</h1>
@@ -17,7 +21,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="cart-buttom">
         <img src="./assets/img/cart.svg" alt="Carrinho de compras">
       </div>
     </div>
@@ -25,7 +29,7 @@
 
   <nav>
     <ul>
-      <li><a href="#todos">Todos</a></li>
+      <li><a href="#todos" class="active">Todos</a></li>
       <li><a href="#lanches">Lanches</a></li>
       <li><a href="#porcoes">Porções</a></li>
       <li><a href="#bebidas">Bebidas</a></li>
@@ -37,7 +41,7 @@
     <section>
       <header>
         <h2>Produtos</h2>
-        <div>
+        <div class="products-info">
           <p>10 itens</p>
           <p id="selected-category">Categoria selecionada: Todos</p>
         </div>
@@ -167,7 +171,7 @@
     <aside aria-label="Resumo do pedido">
       <h2>Seu pedido</h2>
 
-      <div>
+      <div class="cart-empty">
         <img src="./assets/img/cart.svg" alt="">
         <p>Seu carrinho está vazio</p>
         <p>Escolha um item do cardápio para começar</p>
@@ -176,7 +180,7 @@
   </main>
 
   <footer>
-    <div>
+    <div class="container">
       <p>Cardápio Digital - Desenvolvimento Aplicações Web 2026</p>
       <p>Rua Mato Grosso, 200 - Centro - Pato Branco</p>
     </div>
